@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".detail">
+
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+            <ImageButton
+                android:layout_width="60dp"
+                android:layout_height="25dp"
+                android:id="@+id/back"
+                android:background="@color/cardview_shadow_end_color"
+                android:src="@drawable/arrow"
+                />
+            <!-- Profile Image -->
+            <ImageView
+                android:id="@+id/profileImage1"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/c3"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_below="@id/back"
+                android:layout_alignParentStart="true" />
+
+            <!-- Notification Text -->
+            <TextView
+                android:id="@+id/notificationText1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kim Tong"
+                android:textSize="20sp"
+                android:layout_toEndOf="@id/profileImage1"
+                android:layout_alignTop="@id/profileImage1"
+                android:textStyle="bold"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp" />
+
+            <!-- Product Image -->
+            <ImageView
+                android:id="@+id/imageViewProduct"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/profileImage1"
+                android:layout_centerHorizontal="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/fish" />
+
+            
+
+            <!-- Product Name TextView -->
+            <TextView
+                android:id="@+id/textViewProductName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imageViewProduct"
+                android:layout_marginTop="16dp"
+                android:layout_centerHorizontal="true"
+                android:textSize="20sp"
+                android:text="Product name: Snakehead Fish"
+                android:textStyle="bold"
+                android:textAppearance="?attr/textAppearanceListItem" />
+
+            <!-- Product Price TextView -->
+            <TextView
+                android:id="@+id/textViewProductPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewProductName"
+                android:layout_marginTop="8dp"
+                android:layout_centerHorizontal="true"
+                android:textSize="18sp"
+                android:text="Price: $5000/kg"
+                android:textStyle="bold"
+                android:textAppearance="?attr/textAppearanceListItem" />
+
+            <!-- Product Description TextView -->
+            <TextView
+                android:id="@+id/textViewProductDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewProductPrice"
+                android:layout_marginTop="16dp"
+                android:layout_centerHorizontal="true"
+                android:textSize="16sp"
+                android:text="This is a high-quality Snakehead Fish sourced from the best fisheries."
+                android:textAppearance="?attr/textAppearanceListItem" />
+
+            <!-- Product Availability TextView -->
+            <TextView
+                android:id="@+id/textViewProductAvailability"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewProductDescription"
+                android:layout_marginTop="8dp"
+                android:layout_centerHorizontal="true"
+                android:textSize="16sp"
+                android:text="Availability: In Stock"
+                android:textStyle="bold"
+                android:textAppearance="?attr/textAppearanceListItem" />
+
+            <!-- Add to Cart Button -->
+            <Button
+                android:id="@+id/buttonAddToCart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add to Cart"
+                android:layout_below="@id/textViewProductAvailability"
+                android:layout_marginTop="16dp"
+                android:layout_centerHorizontal="true" />
+
+            <!-- Buy Now Button -->
+            <Button
+                android:id="@+id/buttonBuyNow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Buy Now"
+                android:layout_below="@id/buttonAddToCart"
+                android:layout_marginTop="8dp"
+                android:layout_centerHorizontal="true" />
+
+            <!-- Like, Comment, and Share Icons -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/buttonBuyNow"
+                android:layout_marginTop="16dp"
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal">
+
+                <!-- Like ImageView -->
+                <ImageView
+                    android:id="@+id/like"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/l1"
+                    android:layout_marginEnd="16dp" />
+
+                <!-- Comment ImageView -->
+                <ImageView
+                    android:id="@+id/cmt"
+                    android:layout_width="30dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/l2"
+                    android:layout_marginEnd="16dp" />
+
+                <!-- Share ImageView -->
+                <ImageView
+                    android:id="@+id/share"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/share" />
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

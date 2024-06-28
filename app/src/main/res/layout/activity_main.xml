@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:layout_width="420dp"
+        android:layout_height="600dp"
+        android:id="@+id/bgimg"
+        android:background="@drawable/img_round"
+        android:src="@drawable/bg"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-150dp"
+        />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="550dp"
+        android:background="@drawable/bgintro"
+        android:layout_marginTop="320dp"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lblhasacc"
+        android:layout_above="@id/btnLogin"
+        android:text="Welcome to our Marketplace!"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:layout_marginBottom="50dp"
+        android:textStyle="bold"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnLogin"
+        android:layout_marginTop="-20dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/btn_bg_color"
+        android:layout_below="@id/bgimg"
+        android:text="SIGN IN"
+        android:textSize="20dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lblor"
+        android:text="or"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:textAlignment="center"
+        android:layout_below="@id/btnLogin"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnSignup"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/btn_bg_color"
+        android:layout_below="@id/lblor"
+        android:text="Sign Up"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/btnSignup"
+        android:text=" or Sign up with"
+        android:layout_marginTop="15dp"
+        android:id="@+id/lblmoreop"
+        android:textSize="15sp"
+        android:textColor="@color/material_dynamic_neutral50"
+        />
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:background="@drawable/btn_bg"
+
+        android:layout_below="@id/lblmoreop"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="20dp"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:src="@drawable/img"
+        android:id="@+id/btn1"
+        />
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:background="@drawable/btn_bg"
+        android:layout_below="@id/lblmoreop"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_toEndOf="@id/btn1"
+        android:id="@+id/btn2"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:src="@drawable/img_2"/>
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:background="@drawable/btn_bg"
+        android:layout_below="@id/lblmoreop"
+        android:layout_marginTop="20dp"
+
+        android:layout_toEndOf="@id/btn2"
+        android:id="@+id/btn3"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:src="@drawable/img_1"/>
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/btn3"
+        android:text="Join as Guest"
+        android:layout_marginTop="5dp"
+        android:id="@+id/btnloginasguess"
+        android:textSize="13sp"
+        android:textColor="@color/material_dynamic_neutral50"
+        />
+
+
+</RelativeLayout>

@@ -1,0 +1,555 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProductList">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageButton
+                        android:layout_width="60dp"
+                        android:layout_height="30dp"
+                        android:id="@+id/back"
+                        android:background="@color/cardview_shadow_end_color"
+                        android:src="@drawable/arrow"
+                        android:layout_marginTop="20dp"
+                        />
+        <TextView
+            android:id="@+id/tvProductTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Product Hub"
+            android:textSize="24sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:textStyle="bold"
+            android:layout_marginBottom="20dp"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/cat"
+                        android:text="Categories: "
+                        android:layout_below="@id/tvProductTitle"
+                        android:layout_marginStart="10dp"
+                        android:textSize="20sp"/>
+
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="30dp"
+                        android:id="@id/c1"
+                        android:layout_below="@id/tvProductTitle"
+                        android:background="@drawable/img_round"
+                        android:layout_toEndOf="@+id/cat"
+                        android:layout_marginStart="10dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignStart="@id/c1"
+                        android:text="Crop"
+                        android:id="@+id/lblc1"
+                        android:layout_alignTop="@id/c1"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginStart="36dp"
+                        android:textSize="14sp"
+                        android:textStyle="bold"/>
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="30dp"
+                        android:id="@+id/c2"
+                        android:layout_below="@id/tvProductTitle"
+                        android:background="@drawable/img_round"
+                        android:layout_toEndOf="@+id/c1"
+                        android:layout_marginStart="10dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignStart="@+id/c2"
+                        android:text="Animal"
+                        android:id="@+id/lblc2"
+                        android:layout_alignTop="@+id/c2"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginStart="30dp"
+                        android:textSize="14sp"
+                        android:textStyle="bold"/>
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="30dp"
+                        android:id="@+id/c3"
+                        android:layout_below="@id/tvProductTitle"
+                        android:background="@drawable/img_round"
+                        android:layout_toEndOf="@+id/c2"
+                        android:layout_marginStart="10dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignStart="@+id/c3"
+                        android:text="..."
+                        android:id="@+id/lblc3"
+                        android:layout_alignTop="@+id/c3"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginStart="20dp"
+                        android:textSize="14sp"
+                        android:textStyle="bold"/>
+
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:background="@drawable/btn_corner"
+            android:layout_marginTop="10dp"
+            android:id="@+id/bg1"
+            android:layout_below="@+id/c1"
+            />
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/order"
+                        android:id="@+id/o1"
+                        android:layout_alignEnd="@id/bg1"
+                        android:layout_alignTop="@id/bg1"
+                        android:layout_margin="10dp"/>
+        <ImageView
+            android:id="@+id/profileImage1"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/c3"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_below="@id/tvProductTitle"
+
+            android:layout_alignTop="@+id/bg1"/>
+        <TextView
+            android:id="@+id/notificationText1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kim Tong"
+            android:textSize="20sp"
+            android:layout_toEndOf="@id/profileImage1"
+            android:layout_alignTop="@id/profileImage1"
+            android:textStyle="bold"
+
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp"/>
+
+
+        <ImageView
+            android:id="@+id/imageViewProduct"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="10dp"
+            android:scaleType="centerCrop"
+            android:layout_alignTop="@+id/bg1"
+            android:src="@drawable/fish" />
+                    <Button
+                        android:id="@+id/buttonViewDetails"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="View Details"
+                        android:layout_below="@id/profileImage1"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="50dp"/>
+
+        <TextView
+            android:id="@+id/textViewProductName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/imageViewProduct"
+            android:layout_marginStart="14dp"
+            android:textSize="16sp"
+            android:layout_alignTop="@id/imageViewProduct"
+            android:text="Product name: Snakehead Fish"
+            android:textAppearance="?attr/textAppearanceListItem" />
+
+        <TextView
+            android:id="@+id/textViewProductPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewProductName"
+            android:layout_toEndOf="@id/imageViewProduct"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp"
+            android:textSize="16sp"
+            android:text="Price:  $5000/ kg"
+            android:textStyle="bold"
+            android:textAppearance="?attr/textAppearanceListItem" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+                android:id="@+id/like"
+                android:layout_below="@id/imageViewProduct"
+                android:layout_marginStart="40dp"
+            android:layout_marginTop="10dp"
+                android:background="@drawable/l1"
+                />
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="35dp"
+            android:id="@+id/cmt"
+            android:layout_below="@id/imageViewProduct"
+            android:layout_toEndOf="@id/like"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/l2"
+            />
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/share"
+            android:layout_below="@id/imageViewProduct"
+            android:layout_toEndOf="@id/cmt"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/share"
+            />
+
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:background="@drawable/btn_corner"
+            android:layout_marginTop="10dp"
+            android:id="@+id/bg2"
+            android:layout_below="@+id/bg1"
+
+            />
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/order"
+                        android:id="@+id/o2"
+                        android:layout_alignEnd="@id/bg2"
+                        android:layout_alignTop="@id/bg2"
+                        android:layout_margin="10dp"/>
+        <ImageView
+            android:id="@+id/profileImage2"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/c2"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_alignTop="@+id/bg2"/>
+        <TextView
+            android:id="@+id/notificationText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phatthai"
+            android:textSize="20sp"
+            android:layout_toEndOf="@id/profileImage2"
+            android:layout_alignTop="@id/profileImage2"
+            android:textStyle="bold"
+
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp"/>
+                    <Button
+                        android:id="@+id/buttonViewDetails2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="View Details"
+                        android:layout_below="@id/profileImage2"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="50dp"/>
+
+        <ImageView
+            android:id="@+id/imageViewProduct2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="10dp"
+            android:scaleType="centerCrop"
+            android:layout_alignTop="@+id/bg2"
+            android:src="@drawable/fertilizer" />
+        <TextView
+            android:id="@+id/textViewProductName2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/imageViewProduct2"
+            android:layout_marginStart="16dp"
+            android:textSize="16sp"
+            android:layout_alignTop="@id/imageViewProduct2"
+            android:text="Product name: All purpose fertilizer"
+            android:textAppearance="?attr/textAppearanceListItem" />
+
+        <TextView
+            android:id="@+id/textViewProductPrice2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewProductName2"
+            android:layout_toEndOf="@id/imageViewProduct2"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp"
+            android:textSize="16sp"
+            android:text="Price:  $25/ bag"
+            android:textStyle="bold"
+            android:textAppearance="?attr/textAppearanceListItem" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/like2"
+            android:layout_below="@id/imageViewProduct2"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/l1"
+            />
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="35dp"
+            android:id="@+id/cmt2"
+            android:layout_below="@id/imageViewProduct2"
+            android:layout_toEndOf="@id/like"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/l2"
+            />
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/share2"
+            android:layout_below="@id/imageViewProduct2"
+            android:layout_toEndOf="@id/cmt"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/share"
+            />
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="250dp"
+                            android:background="@drawable/btn_corner"
+                            android:layout_marginTop="10dp"
+                            android:id="@+id/bg3"
+                            android:layout_below="@+id/bg2"
+
+                            />
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/order"
+                        android:id="@+id/o3"
+                        android:layout_alignEnd="@id/bg3"
+                        android:layout_alignTop="@id/bg3"
+                        android:layout_margin="10dp"/>
+                    <Button
+                        android:id="@+id/buttonViewDetails3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="View Details"
+                        android:layout_below="@id/profileImage3"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="50dp"/>
+                        <ImageView
+                            android:id="@+id/profileImage3"
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:src="@drawable/c"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_alignTop="@+id/bg3"/>
+                        <TextView
+                            android:id="@+id/notificationText3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Chamroeun tagged Haku"
+                            android:textSize="20sp"
+                            android:layout_toEndOf="@id/profileImage3"
+                            android:layout_alignTop="@id/profileImage3"
+                            android:textStyle="bold"
+
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="10dp"/>
+
+
+                        <ImageView
+                            android:id="@+id/imageViewProduct3"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_marginTop="80dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginStart="10dp"
+                            android:scaleType="centerCrop"
+                            android:layout_alignTop="@+id/bg3"
+                            android:src="@drawable/pumpkin" />
+                        <TextView
+                            android:id="@+id/textViewProductName3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/imageViewProduct3"
+                            android:layout_marginStart="16dp"
+                            android:textSize="16sp"
+                            android:layout_alignTop="@id/imageViewProduct3"
+                            android:text="Product name: Pumpkin"
+                            android:textAppearance="?attr/textAppearanceListItem" />
+
+                        <TextView
+                            android:id="@+id/textViewProductPrice3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/textViewProductName3"
+                            android:layout_toEndOf="@id/imageViewProduct3"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="10dp"
+                            android:textSize="16sp"
+                            android:text="Price:  $0.5/ kg"
+                            android:textStyle="bold"
+                            android:textAppearance="?attr/textAppearanceListItem" />
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:id="@+id/like3"
+                            android:layout_below="@id/imageViewProduct3"
+                            android:layout_marginStart="40dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/l1"
+                            />
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="35dp"
+                            android:id="@+id/cmt3"
+                            android:layout_below="@id/imageViewProduct3"
+                            android:layout_toEndOf="@id/like"
+                            android:layout_marginStart="100dp"
+                            android:layout_marginTop="12dp"
+                            android:background="@drawable/l2"
+                            />
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:id="@+id/share3"
+                            android:layout_below="@id/imageViewProduct3"
+                            android:layout_toEndOf="@id/cmt"
+                            android:layout_marginStart="100dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/share"
+                            />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        android:background="@drawable/btn_corner"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/bg4"
+                        android:layout_below="@+id/bg3"
+
+                        />
+                    <Button
+                        android:id="@+id/buttonViewDetails4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="View Details"
+                        android:layout_below="@id/profileImage4"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="50dp"/>
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/order"
+                        android:id="@+id/o4"
+                        android:layout_alignEnd="@id/bg4"
+                        android:layout_alignTop="@id/bg4"
+                        android:layout_margin="10dp"/>
+                    <ImageView
+                        android:id="@+id/profileImage4"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:src="@drawable/c"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_alignTop="@+id/bg4"/>
+                    <TextView
+                        android:id="@+id/notificationText4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Haku"
+                        android:textSize="20sp"
+                        android:layout_toEndOf="@id/profileImage4"
+                        android:layout_alignTop="@id/profileImage4"
+                        android:textStyle="bold"
+
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="10dp"/>
+
+
+                    <ImageView
+                        android:id="@+id/imageViewProduct4"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginTop="80dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginStart="10dp"
+                        android:scaleType="centerCrop"
+                        android:layout_alignTop="@+id/bg4"
+                        android:src="@drawable/wagyu" />
+                    <TextView
+                        android:id="@+id/textViewProductName4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@id/imageViewProduct4"
+                        android:layout_marginStart="16dp"
+                        android:textSize="16sp"
+                        android:layout_alignTop="@id/imageViewProduct4"
+                        android:text="Product name: Wagyu Cow"
+                        android:textAppearance="?attr/textAppearanceListItem" />
+
+                    <TextView
+                        android:id="@+id/textViewProductPrice4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/textViewProductName4"
+                        android:layout_toEndOf="@id/imageViewProduct4"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="10dp"
+                        android:textSize="16sp"
+                        android:text="Price:  $ 40000/ unit"
+                        android:textStyle="bold"
+                        android:textAppearance="?attr/textAppearanceListItem" />
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:id="@+id/like4"
+                        android:layout_below="@id/imageViewProduct4"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/l1"
+                        />
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="35dp"
+                        android:id="@+id/cmt4"
+                        android:layout_below="@id/imageViewProduct4"
+                        android:layout_toEndOf="@id/like"
+                        android:layout_marginStart="100dp"
+                        android:layout_marginTop="12dp"
+                        android:background="@drawable/l2"
+                        />
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:id="@+id/share4"
+                        android:layout_below="@id/imageViewProduct4"
+                        android:layout_toEndOf="@id/cmt"
+                        android:layout_marginStart="100dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/share"
+                        />
+
+                </RelativeLayout>
+        </ScrollView>
+</RelativeLayout>

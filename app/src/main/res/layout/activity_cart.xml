@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".cart">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+        <ImageButton
+            android:layout_width="60dp"
+            android:layout_height="25dp"
+            android:id="@+id/back"
+            android:background="@color/cardview_shadow_end_color"
+            android:src="@drawable/arrow"
+            android:layout_marginBottom="10dp"
+            />
+        <TextView
+            android:id="@+id/textViewCartTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cart Details"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:paddingBottom="16dp" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:background="@drawable/background_order_item"
+            android:layout_marginBottom="10dp">
+        <TextView
+            android:id="@+id/textViewProductNameCart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Product: Snakehead Fish"
+            android:textSize="16sp"
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:id="@+id/textViewProductQuantityCart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quantity: 1"
+            android:layout_below="@id/textViewProductNameCart"
+            android:textSize="16sp"
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:id="@+id/textViewProductPriceCart"
+            android:layout_width="wrap_content"
+            android:layout_below="@id/textViewProductQuantityCart"
+            android:layout_height="wrap_content"
+            android:text="Price: $5000/kg"
+            android:textSize="16sp"
+            android:paddingBottom="16dp" />
+
+        <Button
+            android:id="@+id/buttonProceedToCheckout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Proceed to Checkout"
+            android:layout_below="@id/textViewProductPriceCart"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="20dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/background_order_item"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/textViewProductNameCart2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:paddingBottom="8dp"
+                android:text="Product: Prohok"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textViewProductQuantityCart2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewProductNameCart2"
+
+                android:paddingBottom="8dp"
+                android:text="Quantity: 1 kg"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textViewProductPriceCart2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewProductQuantityCart2"
+
+                android:paddingBottom="16dp"
+                android:text="Price: $5/kg"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/buttonProceedToCheckout2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewProductPriceCart2"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="16dp"
+                android:text="Proceed to Checkout" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:background="@drawable/background_order_item"
+            android:layout_marginBottom="10dp">
+
+        <TextView
+            android:id="@+id/textViewProductNameCart3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Product: Rice"
+            android:textSize="16sp"
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:id="@+id/textViewProductQuantityCart3"
+            android:layout_width="wrap_content"
+            android:layout_below="@id/textViewProductNameCart3"
+            android:layout_height="wrap_content"
+            android:text="Quantity: 1 bag"
+            android:textSize="16sp"
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:id="@+id/textViewProductPriceCart3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Price: $50/kg"
+            android:layout_below="@id/textViewProductQuantityCart3"
+
+            android:textSize="16sp"
+            android:paddingBottom="16dp" />
+
+        <Button
+            android:id="@+id/buttonProceedToCheckout3"
+            android:layout_width="wrap_content"
+            android:layout_below="@id/textViewProductPriceCart3"
+            android:layout_height="wrap_content"
+            android:text="Proceed to Checkout"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:background="@drawable/background_order_item"
+            android:layout_marginBottom="10dp">
+
+        <TextView
+            android:id="@+id/textViewProductNameCart4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Product: Crap"
+            android:textSize="16sp"
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:id="@+id/textViewProductQuantityCart4"
+            android:layout_width="wrap_content"
+            android:layout_below="@id/textViewProductNameCart4"
+            android:layout_height="wrap_content"
+            android:text="Quantity: 15 kg"
+            android:textSize="16sp"
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:id="@+id/textViewProductPriceCart4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewProductQuantityCart4"
+            android:text="Price: $500/kg"
+            android:textSize="16sp"
+            android:paddingBottom="16dp" />
+
+        <Button
+            android:id="@+id/buttonProceedToCheckout4"
+            android:layout_width="wrap_content"
+            android:layout_below="@id/textViewProductPriceCart4"
+            android:layout_height="wrap_content"
+            android:text="Proceed to Checkout"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

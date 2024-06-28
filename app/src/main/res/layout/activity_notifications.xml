@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Notifications">
+    <ImageButton
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:id="@+id/back"
+        android:background="@color/cardview_shadow_end_color"
+        android:src="@drawable/arrow"
+        android:layout_margin="20dp"
+        />
+    <TextView
+        android:id="@+id/tvFormTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Notification"
+        android:textSize="22sp"
+
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/btn_corner"
+        android:layout_marginTop="40dp"
+
+        android:id="@+id/box1"
+        android:layout_below="@id/tvFormTitle"/>
+    <ImageView
+        android:id="@+id/profileImage1"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/c3"
+        android:layout_alignParentTop="true"
+    android:layout_marginTop="90dp"/>
+
+    <TextView
+        android:id="@+id/notificationText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kim Tong and 3405 others liked your Product."
+        android:textSize="16sp"
+        android:layout_toEndOf="@id/profileImage1"
+        android:layout_alignTop="@id/profileImage1"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/btn_corner"
+        android:layout_marginTop="8dp"
+        android:layout_below="@id/box1"
+        android:id="@+id/box2"
+        />
+    <ImageView
+        android:id="@+id/profileImage2"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/c2"
+    android:layout_below="@id/profileImage1"
+    android:layout_alignStart="@id/profileImage1"
+    android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/notificationText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phatthai commented on your post."
+        android:textSize="16sp"
+        android:layout_toEndOf="@id/profileImage2"
+        android:layout_alignTop="@id/profileImage2"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/btn_corner"
+        android:layout_marginTop="8dp"
+        android:layout_below="@id/box2"
+        android:id="@+id/box3"
+        />
+    <ImageView
+        android:id="@+id/profileImage3"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/mh"
+    android:layout_below="@id/profileImage2"
+    android:layout_alignStart="@id/profileImage2"
+    android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/notificationText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mouyheang shared your product."
+        android:textSize="16sp"
+        android:layout_toEndOf="@id/profileImage3"
+        android:layout_alignTop="@id/profileImage3"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/btn_corner"
+        android:layout_marginTop="8dp"
+        android:layout_below="@id/box3"
+        android:id="@+id/box4"
+        />
+    <ImageView
+        android:id="@+id/profileImage4"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/huh"
+        android:layout_below="@id/profileImage3"
+        android:layout_alignStart="@id/profileImage3"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/notificationText4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tikea shared your product."
+        android:textSize="16sp"
+        android:layout_toEndOf="@id/profileImage4"
+        android:layout_alignTop="@id/profileImage4"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/btn_corner"
+        android:layout_marginTop="8dp"
+        android:layout_below="@id/box4"
+        android:id="@+id/box5"
+        />
+    <ImageView
+        android:id="@+id/profileImage5"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/sleepy"
+        android:layout_below="@id/profileImage4"
+        android:layout_alignStart="@id/profileImage4"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/notificationText5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Odom mentioned on your post."
+        android:textSize="16sp"
+        android:layout_toEndOf="@id/profileImage5"
+        android:layout_alignTop="@id/profileImage5"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/btn_corner"
+        android:layout_marginTop="8dp"
+        android:layout_below="@id/box5"
+        android:id="@+id/box6"
+        />
+    <ImageView
+        android:id="@+id/profileImage6"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/c"
+        android:layout_below="@id/profileImage5"
+        android:layout_alignStart="@id/profileImage5"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/notificationText6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chamroeun mentioned on your post."
+        android:textSize="16sp"
+        android:layout_toEndOf="@id/profileImage6"
+        android:layout_alignTop="@id/profileImage6"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/btn_corner"
+        android:layout_marginTop="8dp"
+        android:layout_below="@id/box6"
+        android:id="@+id/box7"
+        />
+    <ImageView
+        android:id="@+id/profileImage7"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/c"
+        android:layout_below="@id/profileImage6"
+        android:layout_alignStart="@id/profileImage6"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/notificationText7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chamroeun tagged you in his product."
+        android:textSize="16sp"
+        android:layout_toEndOf="@id/profileImage7"
+        android:layout_alignTop="@id/profileImage7"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/btn_corner"
+        android:layout_marginTop="8dp"
+        android:layout_below="@id/box7"
+        android:id="@+id/box8"
+        />
+    <ImageView
+        android:id="@+id/profileImage8"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/dara"
+        android:layout_below="@id/profileImage7"
+        android:layout_alignStart="@id/profileImage7"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/notificationText8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dara tagged you in his product."
+        android:textSize="16sp"
+        android:layout_toEndOf="@id/profileImage8"
+        android:layout_alignTop="@id/profileImage8"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/btn_corner"
+        android:layout_marginTop="8dp"
+        android:layout_below="@id/box8"
+        android:id="@+id/box9"
+        />
+    <ImageView
+        android:id="@+id/profileImage9"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/c2"
+        android:layout_below="@id/profileImage8"
+        android:layout_alignStart="@id/profileImage8"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/notificationText9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mengly replied your comment."
+        android:textSize="16sp"
+        android:layout_toEndOf="@id/profileImage9"
+        android:layout_alignTop="@id/profileImage9"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/btn_corner"
+        android:layout_marginTop="8dp"
+        android:layout_below="@id/box9"
+        android:id="@+id/box10"
+        />
+    <ImageView
+        android:id="@+id/profileImage10"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/basket"
+        android:layout_below="@id/profileImage9"
+        android:layout_alignStart="@id/profileImage9"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/notificationText10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rachen tagged you in his product."
+        android:textSize="16sp"
+        android:layout_toEndOf="@id/profileImage10"
+        android:layout_alignTop="@id/profileImage10"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"/>
+</RelativeLayout>

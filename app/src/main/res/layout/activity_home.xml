@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:layout_width="420dp"
+        android:layout_height="600dp"
+        android:id="@+id/bgimg"
+        android:background="@drawable/img_round"
+        android:src="@drawable/basket"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-130dp"
+        />
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/btntoggle"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/tbg"
+        android:background="@drawable/img_round"
+        />
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/btncart"
+        android:layout_marginStart="320dp"
+        android:layout_marginTop="25dp"
+        android:src="@drawable/market"
+        android:background="@drawable/img_round"
+        />
+
+    <ImageButton
+        android:id="@+id/imgicon1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="220dp"
+        android:background="@drawable/btn_corner"
+        android:src="@drawable/i1" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lblicon1"
+        android:text="Product List"
+        android:layout_below="@id/imgicon1"
+        android:textStyle="bold"
+
+        android:textSize="18sp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="5dp"/>
+
+    <ImageButton
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/imgicon2"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="220dp"
+        android:layout_toEndOf="@id/imgicon1"
+        android:src="@drawable/i2"
+        android:paddingEnd="5dp"
+
+        android:background="@drawable/btn_corner"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lblicon2"
+        android:text="Post Product"
+        android:layout_below="@id/imgicon2"
+        android:layout_toEndOf="@id/lblicon1"
+        android:textStyle="bold"
+        android:layout_marginStart="25dp"
+        android:textSize="18sp"
+        android:layout_marginTop="5dp"/>
+
+    <ImageButton
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/imgicon3"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="220dp"
+        android:layout_toEndOf="@id/imgicon2"
+        android:src="@drawable/i3"
+        android:background="@drawable/btn_corner"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lblicon3"
+        android:text="Profile"
+        android:layout_below="@id/imgicon3"
+        android:layout_toEndOf="@id/lblicon2"
+        android:textStyle="bold"
+        android:layout_marginStart="45dp"
+        android:textSize="18sp"
+        android:layout_marginTop="5dp"/>
+
+
+
+
+
+    <ImageButton
+        android:id="@+id/imgicon4"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/lblicon1"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/btn_corner"
+        android:src="@drawable/i4" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lblicon4"
+        android:text="Orders"
+        android:layout_below="@id/imgicon4"
+        android:textStyle="bold"
+
+        android:textSize="18sp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="5dp"/>
+
+    <ImageButton
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/imgicon5"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="30dp"
+        android:layout_toEndOf="@id/imgicon4"
+        android:layout_below="@id/lblicon2"
+        android:paddingTop="20dp"
+        android:paddingEnd="10dp"
+        android:paddingStart="10dp"
+        android:src="@drawable/i5"
+        android:background="@drawable/btn_corner"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lblicon5"
+        android:text="Messages"
+        android:layout_below="@id/imgicon5"
+        android:layout_toEndOf="@id/lblicon4"
+        android:textStyle="bold"
+        android:layout_marginStart="60dp"
+        android:textSize="18sp"
+        android:layout_marginTop="5dp"/>
+
+    <ImageButton
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/imgicon6"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="30dp"
+        android:layout_toEndOf="@id/imgicon5"
+        android:layout_below="@id/lblicon3"
+        android:paddingTop="30dp"
+        android:src="@drawable/i6"
+        android:background="@drawable/btn_corner"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lblicon6"
+        android:text="Notifications"
+        android:layout_below="@id/imgicon6"
+        android:layout_toEndOf="@id/lblicon5"
+        android:textStyle="bold"
+        android:layout_marginStart="30dp"
+        android:textSize="18sp"
+        android:layout_marginTop="5dp"/>
+
+
+
+
+    <ImageButton
+        android:id="@+id/imgicon7"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/lblicon4"
+        android:paddingTop="30dp"
+        android:paddingEnd="5dp"
+        android:paddingStart="5dp"
+
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/btn_corner"
+        android:src="@drawable/i7" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lblicon7"
+        android:text="Settings"
+        android:layout_below="@id/imgicon7"
+        android:textStyle="bold"
+
+        android:textSize="18sp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="5dp"/>
+
+    <ImageButton
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/imgicon8"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="30dp"
+        android:layout_toEndOf="@id/imgicon7"
+        android:layout_below="@id/lblicon5"
+        android:src="@drawable/i8"
+        android:background="@drawable/btn_corner"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lblicon8"
+        android:text="Help"
+        android:layout_below="@id/imgicon8"
+        android:layout_toEndOf="@id/lblicon7"
+        android:textStyle="bold"
+        android:layout_marginStart="74dp"
+        android:textSize="18sp"
+        android:layout_marginTop="5dp"/>
+
+    <ImageButton
+        android:id="@+id/btnicon9"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/lblicon6"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="28dp"
+        android:layout_toEndOf="@id/imgicon8"
+        android:background="@drawable/btn_corner"
+        android:paddingTop="30dp"
+        android:src="@drawable/i9" />
+
+    <TextView
+        android:id="@+id/lblicon9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="73dp"
+        android:layout_toEndOf="@id/lblicon8"
+        android:layout_below="@id/btnicon9"
+        android:text="Log Out"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:id="@+id/btnmo"
+        android:text="More Option"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_below="@id/imgicon8"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/btn_corner"
+        />
+
+
+
+</RelativeLayout>

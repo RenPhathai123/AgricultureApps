@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".payment">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageButton
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:id="@+id/back"
+                android:background="@color/cardview_shadow_end_color"
+                android:src="@drawable/arrow"
+                android:layout_marginBottom="10dp"
+                />
+            <!-- Title -->
+
+            <TextView
+                android:id="@+id/textViewTitle"
+                android:layout_width="match_parent"
+                android:textAlignment="center"
+                android:paddingTop="10dp"
+                android:background="@drawable/btn_bg_color"
+                android:layout_height="wrap_content"
+                android:text="Payment"
+                android:layout_marginBottom="10dp"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:paddingBottom="16dp" />
+
+            <!-- Product Details -->
+            <TextView
+                android:id="@+id/textViewProductDetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Product: Snakehead Fish"
+                android:textSize="18sp"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:id="@+id/textViewPriceDetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Price: $5000/kg"
+                android:textSize="18sp"
+                android:paddingBottom="16dp" />
+
+            <!-- User Details Section -->
+            <TextView
+                android:id="@+id/textViewUserDetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="User Details"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:paddingBottom="8dp" />
+
+            <EditText
+                android:id="@+id/editTextName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Full Name"
+                android:inputType="textPersonName"
+                android:background="@drawable/message_background"
+                android:layout_marginBottom="8dp"
+                android:paddingBottom="8dp" />
+
+            <EditText
+                android:id="@+id/editTextAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Address"
+                android:inputType="textPostalAddress"
+                android:background="@drawable/message_background"
+                android:layout_marginBottom="8dp"
+                android:paddingBottom="8dp" />
+
+            <EditText
+                android:id="@+id/editTextPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Phone Number"
+                android:background="@drawable/message_background"
+                android:inputType="phone"
+                android:layout_marginBottom="8dp"
+                android:paddingBottom="16dp" />
+
+            <!-- Bank Details Section -->
+            <TextView
+                android:id="@+id/textViewBankDetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bank Details"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:paddingBottom="8dp" />
+
+            <EditText
+                android:id="@+id/editTextBankName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Bank Name"
+                android:background="@drawable/message_background"
+                android:inputType="phone"
+                android:layout_marginBottom="8dp"
+                android:paddingBottom="8dp" />
+
+            <EditText
+                android:id="@+id/editTextAccountNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/message_background"
+                android:layout_marginBottom="8dp"
+                android:hint="Account Number"
+                android:inputType="number"
+                android:paddingBottom="8dp" />
+
+            <EditText
+                android:id="@+id/editTextIFSCCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="IFSC Code"
+                android:background="@drawable/message_background"
+                android:layout_marginBottom="8dp"
+                android:inputType="text"
+                android:paddingBottom="16dp" />
+
+            <!-- Buy Now Button -->
+            <Button
+                android:id="@+id/buttonBuyNow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/btn_bg_color"
+                android:text="Buy Now" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

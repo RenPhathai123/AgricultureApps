@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/main"
+    android:layout_height="match_parent"
+    tools:context=".Setting">
+    <ImageButton
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:id="@+id/back"
+        android:background="@color/cardview_shadow_end_color"
+        android:src="@drawable/arrow"
+        android:layout_margin="20dp"
+        />
+    <TextView
+        android:id="@+id/tvSettingsTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Setting"
+        android:textSize="24sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp"/>
+
+    <ImageView
+        android:id="@+id/btnSettings"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_setting"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="26dp"
+        android:layout_alignTop="@+id/tvSettingsTitle"/>
+
+
+
+        <TextView
+            android:id="@+id/labelSetting1"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:text="Enable Notifications"
+            android:textSize="16sp"
+            android:layout_marginStart="26dp"
+            android:layout_marginEnd="26dp"
+            android:layout_marginTop="86dp"/>
+
+        <Switch
+            android:id="@+id/switchSetting1"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginTop="-10dp"
+            android:layout_marginStart="26dp"
+            android:layout_marginEnd="26dp"
+            android:layout_alignTop="@id/labelSetting1"
+            android:layout_alignParentEnd="true"
+            android:layout_toEndOf="@+id/labelSetting1"
+            tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+        <TextView
+            android:id="@+id/labelSetting2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Background Sync"
+            android:textSize="16sp"
+            android:layout_marginStart="26dp"
+            android:layout_marginEnd="26dp"
+            android:layout_below="@+id/labelSetting1"
+            android:layout_marginTop="18dp"/>
+
+    <Switch
+        android:id="@+id/switchSetting2"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_below="@+id/switchSetting1"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="12dp"
+        android:minWidth="48dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginEnd="26dp"
+        tools:ignore="UseSwitchCompatOrMaterialXml"/>
+
+        <TextView
+            android:id="@+id/labelSetting3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Data Usage"
+            android:layout_marginStart="26dp"
+            android:layout_marginEnd="26dp"
+            android:textSize="16sp"
+            android:layout_below="@id/labelSetting2"
+            android:layout_marginTop="38dp"/>
+
+    <Switch
+        android:id="@+id/switchSetting3"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_below="@id/switchSetting2"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginEnd="26dp"
+        android:minWidth="48dp"
+        tools:ignore="UseSwitchCompatOrMaterialXml"/>
+
+        <TextView
+            android:id="@+id/labelSetting4"
+            android:layout_marginStart="26dp"
+            android:layout_marginEnd="26dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Auto-Update Apps"
+            android:textSize="16sp"
+            android:layout_below="@id/labelSetting3"
+            android:layout_marginTop="38dp"/>
+
+    <Switch
+        android:id="@+id/switchSetting4"
+        android:layout_marginStart="26dp"
+        android:layout_marginEnd="26dp"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_below="@id/switchSetting3"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="12dp"
+        android:minWidth="48dp"
+        tools:ignore="UseSwitchCompatOrMaterialXml"/>
+
+        <TextView
+            android:id="@+id/labelSetting5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Notifications"
+            android:textSize="16sp"
+            android:layout_marginStart="26dp"
+            android:layout_marginEnd="26dp"
+            android:layout_below="@id/labelSetting4"
+            android:layout_marginTop="38dp"/>
+
+    <Switch
+        android:id="@+id/switchSetting5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/switchSetting4"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="14dp"
+        android:minWidth="48dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginEnd="26dp"
+        android:minHeight="48dp"
+        tools:ignore="UseSwitchCompatOrMaterialXml"/>
+
+        <TextView
+            android:id="@+id/labelSetting6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Location Services"
+            android:layout_marginStart="26dp"
+            android:layout_marginEnd="26dp"
+            android:textSize="16sp"
+            android:layout_below="@id/labelSetting5"
+            android:layout_marginTop="38dp"/>
+
+    <Switch
+        android:id="@+id/switchSetting6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/switchSetting5"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="14dp"
+        android:minWidth="48dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginEnd="26dp"
+        android:minHeight="48dp"
+        tools:ignore="UseSwitchCompatOrMaterialXml"/>
+
+        <TextView
+            android:id="@+id/labelSetting7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Theme"
+            android:textSize="16sp"
+            android:layout_marginStart="26dp"
+            android:layout_marginEnd="26dp"
+            android:layout_below="@id/labelSetting6"
+            android:layout_marginTop="38dp"/>
+
+    <Switch
+        android:id="@+id/switchSetting7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/switchSetting6"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="16dp"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginEnd="26dp"
+        tools:ignore="UseSwitchCompatOrMaterialXml"/>
+
+        <TextView
+            android:id="@+id/labelSetting8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cloud Sync"
+            android:textSize="16sp"
+            android:layout_marginStart="26dp"
+            android:layout_marginEnd="26dp"
+            android:layout_below="@id/labelSetting7"
+            android:layout_marginTop="38dp"/>
+
+    <Switch
+        android:id="@+id/switchSetting8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_marginEnd="26dp"
+        android:layout_below="@id/switchSetting7"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        tools:ignore="UseSwitchCompatOrMaterialXml"/>
+
+
+<Button
+    android:id="@+id/tnSavechanges"
+    android:layout_width="match_parent"
+    android:layout_marginStart="26dp"
+    android:layout_marginEnd="26dp"
+    android:layout_height="wrap_content"
+    android:text="Save Changes"
+    android:layout_marginTop="30dp"
+    android:background="@drawable/btn_bg_color"
+    android:layout_below="@id/switchSetting8"/>
+
+
+
+
+</RelativeLayout>

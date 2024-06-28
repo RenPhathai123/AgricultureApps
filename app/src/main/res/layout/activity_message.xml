@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Message">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageButton
+                    android:layout_width="60dp"
+                    android:layout_height="25dp"
+                    android:id="@+id/back"
+                    android:background="@color/cardview_shadow_end_color"
+                    android:src="@drawable/arrow"
+                    android:layout_margin="20dp"
+                    />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="210dp"
+                    android:id="@+id/box"
+                    android:background="@drawable/btn_bg_white"
+                    android:layout_below="@id/tvFormTitle"
+                    android:layout_margin="10dp"
+                    />
+
+                <TextView
+                    android:id="@+id/tvFormTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Message"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    />
+
+                <ImageView
+                    android:id="@+id/profileImage1"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_alignTop="@id/box"
+                    android:src="@drawable/c" />
+
+                <TextView
+                    android:id="@+id/messageText1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/profileImage1"
+                    android:layout_alignTop="@id/profileImage1"
+                    android:layout_marginStart="12dp"
+                    android:layout_below="@+id/box"
+
+                    android:layout_marginEnd="20dp"
+                    android:text="Hello, how are you doing today? I was thinking about my order location is in the wrong spot!"
+                    android:background="@drawable/message_background"
+                android:padding="10dp"
+                android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/timestamp1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/messageText1"
+                    android:layout_toEndOf="@id/profileImage1"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="4dp"
+                    android:text="10:45 AM Today"
+                    android:textSize="12sp"
+                    android:textColor="#888" />
+
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/lblr1"
+                   android:layout_alignBottom="@id/box"
+                   android:text="Reply"
+                   android:background="@drawable/img_round"
+                   android:layout_marginBottom="20dp"
+                   android:layout_marginStart="20dp"
+                   android:paddingHorizontal="15dp"
+                   android:paddingVertical="10dp"
+                   />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_alignBottom="@id/box"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_toEndOf="@id/lblr1"
+                    android:background="@drawable/white_round"
+                    android:padding="10dp"
+                    android:id="@+id/etr1"
+                    tools:ignore="VisualLintTextFieldSize" />
+
+
+
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:id="@+id/box2"
+                    android:background="@drawable/btn_bg_white"
+                    android:layout_below="@id/box"
+                    android:layout_margin="10dp"
+                    />
+
+
+
+                <ImageView
+                    android:id="@+id/profileImage2"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_alignTop="@id/box2"
+                    android:src="@drawable/c2" />
+
+                <TextView
+                    android:id="@+id/messageText2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/profileImage2"
+                    android:layout_alignTop="@id/profileImage2"
+                    android:layout_marginStart="12dp"
+                    android:layout_below="@+id/box2"
+
+                    android:layout_marginEnd="20dp"
+                    android:text="Do you still have that juicy Wagyu cow filet mignon!"
+                    android:background="@drawable/message_background"
+                    android:padding="10dp"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/timestamp2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/messageText2"
+                    android:layout_toEndOf="@id/profileImage2"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="4dp"
+                    android:text="11:35 PM  Yesterday"
+                    android:textSize="12sp"
+                    android:textColor="#888" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/lblr2"
+                    android:layout_alignBottom="@id/box2"
+                    android:text="Reply"
+                    android:background="@drawable/img_round"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginStart="20dp"
+                    android:paddingHorizontal="15dp"
+                    android:paddingVertical="10dp"
+                    />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_alignBottom="@id/box2"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_toEndOf="@id/lblr2"
+                    android:background="@drawable/white_round"
+                    android:padding="10dp"
+                    android:id="@+id/etr2"/>
+
+
+
+
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:id="@+id/box3"
+                    android:background="@drawable/btn_bg_white"
+                    android:layout_below="@id/box2"
+                    android:layout_margin="10dp"
+                    />
+
+
+
+                <ImageView
+                    android:id="@+id/profileImage3"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_alignTop="@id/box3"
+                    android:src="@drawable/c3" />
+
+                <TextView
+                    android:id="@+id/messageText3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/profileImage3"
+                    android:layout_alignTop="@id/profileImage3"
+                    android:layout_marginStart="12dp"
+                    android:layout_below="@+id/box3"
+
+                    android:layout_marginEnd="20dp"
+                    android:text="Do you still wanna buy my 5000$ / kg fish?"
+                    android:background="@drawable/message_background"
+                    android:padding="10dp"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/timestamp3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/messageText3"
+                    android:layout_toEndOf="@id/profileImage3"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="4dp"
+                    android:text="2:35 PM  last week"
+                    android:textSize="12sp"
+                    android:textColor="#888" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/lblr3"
+                    android:layout_alignBottom="@id/box3"
+                    android:text="Reply"
+                    android:background="@drawable/img_round"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginStart="20dp"
+                    android:paddingHorizontal="15dp"
+                    android:paddingVertical="10dp"
+                    />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_alignBottom="@id/box3"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_toEndOf="@id/lblr3"
+                    android:background="@drawable/white_round"
+                    android:padding="10dp"
+                    android:id="@+id/etr3"/>
+
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Help">
+    <ImageButton
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:id="@+id/back"
+        android:background="@color/cardview_shadow_end_color"
+        android:src="@drawable/arrow"
+        android:layout_margin="20dp"
+        />
+
+    <TextView
+        android:id="@+id/helpTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Help and Support"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/btn_corner"
+        android:layout_marginTop="35dp"
+        android:id="@+id/box1"
+        android:layout_below="@id/helpTitle"/>
+    <ImageView
+        android:id="@+id/profileImage1"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/c3"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="90dp"/>
+
+    <TextView
+        android:id="@+id/notificationText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="How to start with App"
+        android:textSize="16sp"
+        android:layout_toEndOf="@id/profileImage1"
+        android:layout_alignTop="@id/profileImage1"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="15dp"
+        android:textStyle="bold"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/btn_corner"
+        android:layout_marginTop="8dp"
+        android:layout_below="@id/box1"
+        android:id="@+id/box2"
+        />
+    <ImageView
+        android:id="@+id/profileImage2"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/c2"
+        android:layout_below="@id/profileImage1"
+        android:layout_alignStart="@id/profileImage1"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/notificationText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Troubleshooting login issues"
+        android:textSize="16sp"
+        android:layout_toEndOf="@id/profileImage2"
+        android:layout_alignTop="@id/profileImage2"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="15dp"
+        android:textStyle="bold"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/btn_corner"
+        android:layout_marginTop="8dp"
+        android:layout_below="@id/box2"
+        android:id="@+id/box3"
+        />
+    <ImageView
+        android:id="@+id/profileImage3"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/mh"
+        android:layout_below="@id/profileImage2"
+        android:layout_alignStart="@id/profileImage2"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/notificationText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Managing your account"
+        android:textSize="16sp"
+        android:layout_toEndOf="@id/profileImage3"
+        android:layout_alignTop="@id/profileImage3"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="15dp"
+        android:textStyle="bold"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/btn_corner"
+        android:layout_marginTop="8dp"
+        android:layout_below="@id/box3"
+        android:id="@+id/box4"
+        />
+    <ImageView
+        android:id="@+id/profileImage4"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/huh"
+        android:layout_below="@id/profileImage3"
+        android:layout_alignStart="@id/profileImage3"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/notificationText4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Privacy and security"
+        android:textSize="16sp"
+        android:layout_toEndOf="@id/profileImage4"
+        android:layout_alignTop="@id/profileImage4"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="15dp"
+        android:textStyle="bold"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/btn_corner"
+        android:layout_marginTop="8dp"
+        android:layout_below="@id/box4"
+        android:id="@+id/box5"
+        />
+    <ImageView
+        android:id="@+id/profileImage5"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/sleepy"
+        android:layout_below="@id/profileImage4"
+        android:layout_alignStart="@id/profileImage4"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/notificationText5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FAQs"
+        android:textSize="16sp"
+        android:layout_toEndOf="@id/profileImage5"
+        android:layout_alignTop="@id/profileImage5"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="15dp"
+        android:textStyle="bold"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/btndone"
+        android:text="DOne"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_below="@id/notificationText5"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/btn_corner"
+        />
+</RelativeLayout>

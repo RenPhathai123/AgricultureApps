@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Profile">
+    <ImageButton
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:id="@+id/back"
+        android:background="@color/cardview_shadow_end_color"
+        android:src="@drawable/arrow"
+        android:layout_margin="20dp"
+        />
+
+    <TextView
+        android:id="@+id/tvFormTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Profile"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginStart="26dp"
+        android:layout_marginEnd="26dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        />
+        <ImageView
+            android:id="@+id/profileImage"
+            android:layout_marginStart="26dp"
+            android:layout_marginEnd="26dp"
+            android:layout_below="@id/tvFormTitle"
+            android:layout_width="220dp"
+            android:layout_height="200dp"
+            android:src="@drawable/c"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="24dp"
+            android:scaleType="centerCrop" />
+
+        <EditText
+            android:id="@+id/editTextName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/profileImage"
+            android:layout_marginTop="20dp"
+            android:hint="Knen"
+            android:layout_marginStart="26dp"
+            android:layout_marginEnd="26dp"
+            android:padding="12dp"/>
+
+        <EditText
+            android:id="@+id/editTextEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextName"
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="26dp"
+            android:layout_marginEnd="26dp"
+            android:hint="Knen16@gmail.com"
+            android:inputType="textEmailAddress"
+            android:padding="12dp"/>
+
+        <EditText
+            android:id="@+id/editTextPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextEmail"
+            android:layout_marginTop="12dp"
+            android:hint="099 966 773"
+            android:inputType="phone"
+            android:layout_marginStart="26dp"
+            android:layout_marginEnd="26dp"
+            android:padding="12dp"/>
+
+        <Button
+            android:id="@+id/buttonSaveChanges"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextPhone"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="26dp"
+            android:layout_marginEnd="26dp"
+            android:text="Save Changes"/>
+
+        <Button
+            android:id="@+id/buttonLogout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/buttonSaveChanges"
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="26dp"
+            android:layout_marginEnd="26dp"
+            android:text="Log Out"/>
+
+
+
+</RelativeLayout>

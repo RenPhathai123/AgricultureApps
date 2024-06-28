@@ -1,0 +1,9 @@
+<resources>
+    <string-array name="help_options">
+        <item>How to start with App</item>
+        <item>Troubleshooting login issues</item>
+        <item>Managing your account</item>
+        <item>Privacy and security</item>
+        <item>FAQs</item>
+    </string-array>
+</resources>
